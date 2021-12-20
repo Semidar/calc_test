@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <!-- Задача: необхідно створити форму в якій буде 2 інпута для чисел і один селект для математичної операції (+,-,*,/). По сабміту форми користувач має побачити результат. Результат має бути завжди цілим числом. Додай лейбли до полів вводу та анотації, щоб було інтуітивно зрозуміло що робити. Завдання можеш оформити у Github та прислати нам посиланням на репозіторій або розшарити нам його за допомогою гуглдоку -->
+
+    <div class="form-wrapper">
+        <form name="form">
+            <label>Input first number:</label>
+            <input type="number" min="0" placeholder="first number">
+            <label>Input second number:</label>
+            <input type="number" placeholder="second number">
+            <label>Select operation:</label>
+            <select name="operation" id="operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <button class="reset">reset</button>
+            <button class="submit">submit</button>
+            <div class="answer">Answer:</div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
